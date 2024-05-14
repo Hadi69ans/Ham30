@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Infrastructute\Exceptions\" />
+    <Folder Include="Infrastructute\Serialization\" />
     <Folder Include="UI\Components\" />
     <Folder Include="Entites\" />
     <Folder Include="Features\" />
