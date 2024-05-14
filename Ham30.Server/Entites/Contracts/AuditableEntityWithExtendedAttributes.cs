@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Ham30.Server.Entites.Common;
 
 namespace Ham30.Server.Domain.Contracts
 {

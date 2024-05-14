@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Ham30.Server.Entites.Common;
+using System;
 
-namespace Ham30.Server.Domain.Contracts
+namespace Ham30.Server.Entites.Enums
 {
-    public abstract class AuditableEntity<TId> : IAuditableEntity<TId>
+    public abstract class AuditableEntityWithSoftDelete<TId> : IAuditableEntity<TId> , ISoftDelete
     {
         public TId Id { get; set; }
         public string CreatedBy { get; set; }
@@ -12,5 +13,10 @@ namespace Ham30.Server.Domain.Contracts
         public string DeletedBy { get; set; }
         public DateTime? DeletedOn { get; set; }
 
+        protected AuditableEntityWithSoftDelete()
+        {
+            CreatedOn = DateTime.UtcNow;
+            LastModifiedOn = DateTime.UtcNow;
+        }
     }
 }

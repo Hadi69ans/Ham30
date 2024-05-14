@@ -8,19 +8,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ham30.Client\Ham30.Client.csproj" />
+    <ProjectReference Include="..\Ham30.Sheard\Ham30.Sheard.csproj" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Infrastructute\Exceptions\" />
     <Folder Include="Infrastructute\Behaviours\" />
+    <Folder Include="Models\" />
     <Folder Include="Services\Auditing\" />
     <Folder Include="Services\Logers\" />
-    <Folder Include="Services\Tenant\" />
     <Folder Include="Infrastructute\Serialization\" />
+    <Folder Include="Services\Tenant\" />
     <Folder Include="UI\Components\" />
     <Folder Include="Features\" />
-    <Folder Include="Services\Identity\" />
     <Folder Include="Infrastructute\Extensions\" />
     <Folder Include="Infrastructute\Managers\" />
     <Folder Include="Infrastructute\Migrations\" />
@@ -29,8 +31,6 @@
     <Folder Include="Infrastructute\Middlewares\" />
     <Folder Include="Infrastructute\Specifications\" />
     <Folder Include="Infrastructute\Persistence\" />
-    <Folder Include="Models\" />
-    <Folder Include="Mappings\" />
     <Folder Include="UI\Layout\" />
     <Folder Include="Resources\" />
   </ItemGroup>

@@ -1,6 +1,7 @@
 ﻿#nullable enable
 using System;
-using Ham30.Server.Domain.Enums;
+using Ham30.Server.Entites.Common;
+using Ham30.Server.Entites.Enums;
 
 namespace Ham30.Server.Domain.Contracts
 {

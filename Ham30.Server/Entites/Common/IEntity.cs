@@ -1,4 +1,4 @@
-﻿namespace Ham30.Server.Domain.Contracts
+﻿namespace Ham30.Server.Entites.Common
 {
     public interface IEntity<TId> : IEntity
     {

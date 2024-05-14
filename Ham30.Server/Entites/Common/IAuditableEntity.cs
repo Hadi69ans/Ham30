@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ham30.Server.Domain.Contracts
+namespace Ham30.Server.Entites.Common
 {
     public interface IAuditableEntity<TId> : IAuditableEntity, IEntity<TId>
     {

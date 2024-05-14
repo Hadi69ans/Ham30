@@ -1,4 +1,4 @@
-﻿namespace Ham30.Server.Domain.Enums
+﻿namespace Ham30.Server.Entites.Enums
 {
     public enum EntityExtendedAttributeType : byte
     {
