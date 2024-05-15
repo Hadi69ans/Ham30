@@ -40,7 +40,6 @@
     <Folder Include="Services\Tenant\" />
     <Folder Include="UI\Components\" />
     <Folder Include="Features\" />
-    <Folder Include="Infrastructute\Extensions\" />
     <Folder Include="Infrastructute\Managers\" />
     <Folder Include="Infrastructute\Migrations\" />
     <Folder Include="Infrastructute\Localization\" />

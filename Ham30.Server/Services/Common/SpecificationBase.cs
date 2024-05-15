@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using Ham30.Server.Entites.Common;
+using Ham30.Server.Infrastructute.Extensions;
 using Ham30.Server.Services.Common.Interface;
 
 namespace Ham30.Server.Services.Common
