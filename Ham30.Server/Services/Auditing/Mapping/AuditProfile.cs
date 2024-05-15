@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using BlazorStore.Application.Responses.Audit;
 using Ham30.Server.Services.Auditing.Models;
+using Ham30.Server.Services.Auditing.Response;
 
 namespace Ham30.Server.Services.Auditing.Mapping
 {

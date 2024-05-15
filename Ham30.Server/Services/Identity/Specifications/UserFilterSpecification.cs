@@ -1,5 +1,6 @@
-﻿using BlazorStore.Infrastructure.Models.Identity;
-using BlazorStore.Application.Specifications.Base;
+﻿
+using Ham30.Server.Services.Common;
+using Ham30.Server.Services.Identity.Models;
 
 namespace Ham30.Server.Services.Identity.Specifications
 {

@@ -1,5 +1,7 @@
-﻿using BlazorStore.Infrastructure.Models.Audit;
-using BlazorStore.Application.Specifications.Base;
+﻿
+
+using Ham30.Server.Services.Auditing.Models;
+using Ham30.Server.Services.Common;
 
 namespace Ham30.Server.Services.Auditing.Specifications
 {

@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using BlazorStore.Application.Interfaces.Services;
-using BlazorStore.Infrastructure.Models.Audit;
-using BlazorStore.Application.Responses.Audit;
-using BlazorStore.Infrastructure.Contexts;
-using BlazorStore.Shared.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
-using BlazorStore.Application.Extensions;
-using BlazorStore.Infrastructure.Specifications;
 using Microsoft.Extensions.Localization;
+using Ham30.Server.Services.Auditing.Interfaces;
+using Ham30.Server.Infrastructute.Persistence;
+using Ham30.Server.Services.Common.Interface;
+using Ham30.Server.Services.Auditing.Response;
+using Ham30.Server.Services.Auditing.Specifications;
+using Ham30.Sheard.Wrapper;
+using Ham30.Server.Services.Auditing.Models;
 
 namespace Ham30.Server.Services.Auditing
 {
@@ -20,18 +20,15 @@ namespace Ham30.Server.Services.Auditing
     {
         private readonly ApplicationContext _context;
         private readonly IMapper _mapper;
-        private readonly IExcelService _excelService;
         private readonly IStringLocalizer<AuditService> _localizer;
 
         public AuditService(
             IMapper mapper,
             ApplicationContext context,
-            IExcelService excelService,
             IStringLocalizer<AuditService> localizer)
         {
             _mapper = mapper;
             _context = context;
-            _excelService = excelService;
             _localizer = localizer;
         }
 
@@ -42,6 +39,7 @@ namespace Ham30.Server.Services.Auditing
             return await Result<IEnumerable<AuditResponse>>.SuccessAsync(mappedLogs);
         }
 
+        /*
         public async Task<IResult<string>> ExportToExcelAsync(string userId, string searchString = "", bool searchInOldValues = false, bool searchInNewValues = false)
         {
             var auditSpec = new AuditFilterSpecification(userId, searchString, searchInOldValues, searchInNewValues);
@@ -63,5 +61,6 @@ namespace Ham30.Server.Services.Auditing
 
             return await Result<string>.SuccessAsync(data: data);
         }
+        */
     }
 }

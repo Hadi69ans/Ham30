@@ -1,4 +1,5 @@
-﻿using BlazorStore.Domain.Contracts;
+﻿
+using Ham30.Server.Entites.Common;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
