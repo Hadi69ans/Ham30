@@ -10,14 +10,26 @@
     <ProjectReference Include="..\Ham30.Client\Ham30.Client.csproj" />
     <ProjectReference Include="..\Ham30.Sheard\Ham30.Sheard.csproj" />
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Infrastructute\Exceptions\" />
     <Folder Include="Infrastructute\Behaviours\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\Auditing\" />
+    <Folder Include="Services\Identity\Controllers\" />
     <Folder Include="Services\Logers\" />
     <Folder Include="Infrastructute\Serialization\" />
     <Folder Include="Services\Tenant\" />
@@ -30,7 +42,6 @@
     <Folder Include="Infrastructute\Localization\" />
     <Folder Include="Infrastructute\Middlewares\" />
     <Folder Include="Infrastructute\Specifications\" />
-    <Folder Include="Infrastructute\Persistence\" />
     <Folder Include="UI\Layout\" />
     <Folder Include="Resources\" />
   </ItemGroup>

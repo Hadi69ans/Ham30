@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ham30.Server.Services.Identity.Interfaces
+namespace Ham30.Server.Services.Chat.Interfaces
 {
     public interface IChatHistory<TUser> where TUser : IChatUser
     {
