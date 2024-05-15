@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Ham30.Server.Infrastructute.Persistence;
 using Ham30.Server.Services.Identity.Interfaces;
 using Ham30.Server.Services.Identity.Models;
 using Ham30.Server.Services.Identity.Requests;

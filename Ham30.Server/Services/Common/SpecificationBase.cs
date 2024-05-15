@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using BlazorStore.Application.Extensions;
-using BlazorStore.Domain.Contracts;
+using Ham30.Server.Entites.Common;
 using Ham30.Server.Services.Common.Interface;
 
 namespace Ham30.Server.Services.Common

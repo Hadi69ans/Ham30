@@ -27,7 +27,6 @@ namespace Ham30.Server.Services.Identity
         private readonly RoleManager<AppRole> _roleManager;
         private readonly IMailService _mailService;
         private readonly IStringLocalizer<UserService> _localizer;
-        private readonly IExcelService _excelService;
         private readonly ICurrentUserService _currentUserService;
         private readonly IMapper _mapper;
 
@@ -37,7 +36,6 @@ namespace Ham30.Server.Services.Identity
             RoleManager<AppRole> roleManager,
             IMailService mailService,
             IStringLocalizer<UserService> localizer,
-            IExcelService excelService,
             ICurrentUserService currentUserService)
         {
             _userManager = userManager;
@@ -45,7 +43,6 @@ namespace Ham30.Server.Services.Identity
             _roleManager = roleManager;
             _mailService = mailService;
             _localizer = localizer;
-            _excelService = excelService;
             _currentUserService = currentUserService;
         }
 
