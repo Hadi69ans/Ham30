@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using Ham30.Server.Services.Identity.Models;
 using Ham30.Server.Services.Identity.Interfaces;
-using Ham30.Server.Services.Common;
 using Ham30.Server.Services.Identity.Requests;
 using Ham30.Sheard.Wrapper;
+using Ham30.Server.Services.Common.Interface;
 
 namespace Ham30.Server.Services.Identity
 {

@@ -1,7 +1,6 @@
-﻿
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Ham30.Server.Services.Common
+namespace Ham30.Server.Services.Common.Interface
 {
     public interface IMailService
     {

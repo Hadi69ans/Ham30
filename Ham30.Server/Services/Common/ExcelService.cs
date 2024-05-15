@@ -1,5 +1,4 @@
-﻿using BlazorStore.Application.Interfaces.Services;
-using OfficeOpenXml;
+﻿using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using System;
 using System.Collections.Generic;
@@ -10,8 +9,9 @@ using Microsoft.Extensions.Localization;
 using System.IO;
 using System.Data;
 using BlazorStore.Shared.Wrapper;
+using Ham30.Server.Services.Common.Interface;
 
-namespace BlazorStore.Infrastructure.Services
+namespace Ham30.Server.Services.Common
 {
     public class ExcelService : IExcelService
     {
@@ -85,7 +85,7 @@ namespace BlazorStore.Infrastructure.Services
 
         public async Task<IResult<IEnumerable<TEntity>>> ImportAsync<TEntity>(Stream stream, Dictionary<string, Func<DataRow, TEntity, object>> mappers, string sheetName = "Sheet1")
         {
-            var result =new List<TEntity>();
+            var result = new List<TEntity>();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             using var p = new ExcelPackage();
             stream.Position = 0;

@@ -1,6 +1,6 @@
 ﻿using Ham30.Server.Entites.Common;
 
-namespace Ham30.Server.Domain.Contracts
+namespace Ham30.Server.Entites.Contracts
 {
     public interface IEntityAuditableExtendedAttribute<TId, TEntityId, TEntity>
         : IEntityExtendedAttribute<TId, TEntityId, TEntity>, IAuditableEntity<TId>

@@ -1,5 +1,4 @@
-﻿
-using Ham30.Server.Services.Common;
+﻿using Ham30.Server.Services.Common.Interface;
 using Ham30.Server.Services.Identity.Requests;
 using Ham30.Sheard.Wrapper;
 using System.Threading.Tasks;

@@ -1,6 +1,6 @@
 ﻿using Ham30.Server.Services.Chat.Interfaces;
 using System;
-namespace Ham30.Server.Services.Identity.Models
+namespace Ham30.Server.Services.Chat.Models
 {
     public partial class ChatHistory<TUser> : IChatHistory<TUser> where TUser : IChatUser
     {

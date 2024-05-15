@@ -1,5 +1,5 @@
-﻿using Ham30.Server.Services.Identity.Models;
-using Ham30.Server.Services.Identity.Response;
+﻿using Ham30.Server.Services.Chat.Models;
+using Ham30.Server.Services.Chat.Response;
 using Ham30.Sheard.Wrapper;
 using System.Collections.Generic;
 using System.Threading.Tasks;

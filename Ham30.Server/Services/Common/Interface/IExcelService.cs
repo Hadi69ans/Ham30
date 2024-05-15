@@ -5,7 +5,7 @@ using System.Data;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace BlazorStore.Application.Interfaces.Services
+namespace Ham30.Server.Services.Common.Interface
 {
     public interface IExcelService
     {

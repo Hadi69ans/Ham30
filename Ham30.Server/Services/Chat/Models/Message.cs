@@ -1,4 +1,4 @@
-namespace Ham30.Server.Services.Identity.Models
+namespace Ham30.Server.Services.Chat.Models
 {
     public class Message
     {

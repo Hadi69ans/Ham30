@@ -1,6 +1,7 @@
 ﻿
 using Ham30.Server.Entites.Common;
-using Ham30.Server.Services.Common;
+using Ham30.Server.Services.Chat.Models;
+using Ham30.Server.Services.Common.Interface;
 using Ham30.Server.Services.Identity.Interfaces;
 using Ham30.Server.Services.Identity.Models;
 using Microsoft.AspNetCore.Identity;

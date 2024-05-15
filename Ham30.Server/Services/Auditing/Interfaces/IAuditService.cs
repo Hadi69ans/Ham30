@@ -1,5 +1,4 @@
-﻿
-using Ham30.Sheard.Wrapper;
+﻿using Ham30.Sheard.Wrapper;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
