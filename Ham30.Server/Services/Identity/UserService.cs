@@ -6,12 +6,14 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using AutoMapper;
+using Ham30.Server.Infrastructute.Exceptions;
 using Ham30.Server.Services.Common;
 using Ham30.Server.Services.Common.Interface;
 using Ham30.Server.Services.Identity.Interfaces;
 using Ham30.Server.Services.Identity.Models;
 using Ham30.Server.Services.Identity.Requests;
 using Ham30.Server.Services.Identity.Response;
+using Ham30.Server.Services.Identity.Specifications;
 using Ham30.Sheard.Contracts.Identity;
 using Ham30.Sheard.Wrapper;
 using Microsoft.AspNetCore.Identity;
@@ -267,7 +269,7 @@ namespace Ham30.Server.Services.Identity
             var count = await _userManager.Users.CountAsync();
             return count;
         }
-
+        /*
         public async Task<string> ExportToExcelAsync(string searchString = "")
         {
             var userSpec = new UserFilterSpecification(searchString);
@@ -294,5 +296,6 @@ namespace Ham30.Server.Services.Identity
 
             return result;
         }
+        */
     }
 }

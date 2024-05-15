@@ -11,6 +11,9 @@ using Ham30.Server.Services.Identity.Models;
 using Ham30.Sheard.Wrapper;
 using Ham30.Server.Services.Identity.Response;
 using Ham30.Server.Services.Identity.Requests;
+using Ham30.Sheard.Contracts.Identity;
+using Ham30.Sheard.Contracts.Permission;
+using Ham30.Server.Infrastructute.Helpers;
 
 namespace Ham30.Server.Services.Identity
 {

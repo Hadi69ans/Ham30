@@ -28,6 +28,6 @@ namespace Ham30.Server.Services.Identity.Interfaces
 
         Task<Sheard.Wrapper.IResult> ResetPasswordAsync(ResetPasswordRequest request);
 
-        Task<string> ExportToExcelAsync(string searchString = "");
+        //Task<string> ExportToExcelAsync(string searchString = "");
     }
 }
