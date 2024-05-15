@@ -1,5 +1,4 @@
-﻿
-using Ham30.Server.Services.Common;
+﻿using Ham30.Server.Services.Common.Interface;
 
 namespace Ham30.Server.Services.Identity.Interfaces
 {

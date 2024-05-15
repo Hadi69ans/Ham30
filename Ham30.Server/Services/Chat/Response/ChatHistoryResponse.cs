@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ham30.Server.Services.Identity.Response
+namespace Ham30.Server.Services.Chat.Response
 {
     public partial class ChatHistoryResponse
     {

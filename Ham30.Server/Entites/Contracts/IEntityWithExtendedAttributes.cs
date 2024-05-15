@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Ham30.Server.Domain.Contracts
+namespace Ham30.Server.Entites.Contracts
 {
     public interface IEntityWithExtendedAttributes<TExtendedAttribute>
     {

@@ -1,9 +1,8 @@
-﻿
-using Ham30.Server.Services.Chat.Interfaces;
-using Ham30.Server.Services.Identity.Models;
+﻿using Ham30.Server.Services.Chat.Interfaces;
+using Ham30.Server.Services.Chat.Models;
 using System.Collections.Generic;
 
-namespace Ham30.Server.Services.Identity.Response
+namespace Ham30.Server.Services.Chat.Response
 {
     public class ChatUserResponse
     {

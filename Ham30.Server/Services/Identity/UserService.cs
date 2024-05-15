@@ -6,8 +6,8 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using AutoMapper;
-using BlazorStore.Application.Interfaces.Services;
 using Ham30.Server.Services.Common;
+using Ham30.Server.Services.Common.Interface;
 using Ham30.Server.Services.Identity.Interfaces;
 using Ham30.Server.Services.Identity.Models;
 using Ham30.Server.Services.Identity.Requests;
@@ -27,7 +27,6 @@ namespace Ham30.Server.Services.Identity
         private readonly RoleManager<AppRole> _roleManager;
         private readonly IMailService _mailService;
         private readonly IStringLocalizer<UserService> _localizer;
-        private readonly IExcelService _excelService;
         private readonly ICurrentUserService _currentUserService;
         private readonly IMapper _mapper;
 
@@ -37,7 +36,6 @@ namespace Ham30.Server.Services.Identity
             RoleManager<AppRole> roleManager,
             IMailService mailService,
             IStringLocalizer<UserService> localizer,
-            IExcelService excelService,
             ICurrentUserService currentUserService)
         {
             _userManager = userManager;
@@ -45,7 +43,6 @@ namespace Ham30.Server.Services.Identity
             _roleManager = roleManager;
             _mailService = mailService;
             _localizer = localizer;
-            _excelService = excelService;
             _currentUserService = currentUserService;
         }
 

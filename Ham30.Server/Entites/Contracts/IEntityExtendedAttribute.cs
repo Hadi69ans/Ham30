@@ -3,7 +3,7 @@ using System;
 using Ham30.Server.Entites.Common;
 using Ham30.Server.Entites.Enums;
 
-namespace Ham30.Server.Domain.Contracts
+namespace Ham30.Server.Entites.Contracts
 {
     public interface IEntityExtendedAttribute<TId, TEntityId, TEntity>
         : IEntityExtendedAttribute<TEntityId, TEntity>, IEntity<TId>

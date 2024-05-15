@@ -11,7 +11,8 @@
     <ProjectReference Include="..\Ham30.Sheard\Ham30.Sheard.csproj" />
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="FluentValidation" Version="11.9.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.4" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
@@ -23,11 +24,15 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Infrastructute\Behaviours\" />
     <Folder Include="Models\" />
+    <Folder Include="Services\Auditing\Requests\" />
+    <Folder Include="Services\Chat\Validators\" />
+    <Folder Include="Services\Chat\Requests\" />
     <Folder Include="Services\Identity\Controllers\" />
     <Folder Include="Services\Logers\" />
     <Folder Include="Infrastructute\Serialization\" />

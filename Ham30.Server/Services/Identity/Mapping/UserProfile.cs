@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Ham30.Server.Services.Identity.Response;
 using Ham30.Server.Services.Identity.Models;
+using Ham30.Server.Services.Chat.Response;
 
 namespace Ham30.Server.Services.Identity.Mapping
 {

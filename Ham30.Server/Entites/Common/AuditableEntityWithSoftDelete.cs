@@ -1,9 +1,8 @@
-﻿using Ham30.Server.Entites.Common;
-using System;
+﻿using System;
 
-namespace Ham30.Server.Entites.Enums
+namespace Ham30.Server.Entites.Common
 {
-    public abstract class AuditableEntityWithSoftDelete<TId> : IAuditableEntity<TId> , ISoftDelete
+    public abstract class AuditableEntityWithSoftDelete<TId> : IAuditableEntity<TId>, ISoftDelete
     {
         public TId Id { get; set; }
         public string CreatedBy { get; set; }

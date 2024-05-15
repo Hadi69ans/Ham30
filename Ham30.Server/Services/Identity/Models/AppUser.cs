@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using Ham30.Server.Entites.Common;
 using Ham30.Server.Services.Chat.Interfaces;
+using Ham30.Server.Services.Chat.Models;
 
 namespace Ham30.Server.Services.Identity.Models
 {

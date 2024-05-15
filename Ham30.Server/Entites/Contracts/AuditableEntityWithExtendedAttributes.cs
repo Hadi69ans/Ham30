@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Ham30.Server.Entites.Common;
 
-namespace Ham30.Server.Domain.Contracts
+namespace Ham30.Server.Entites.Contracts
 {
-    public abstract class AuditableEntityWithExtendedAttributes<TId, TEntityId, TEntity, TExtendedAttribute> 
+    public abstract class AuditableEntityWithExtendedAttributes<TId, TEntityId, TEntity, TExtendedAttribute>
         : AuditableEntity<TEntityId>, IEntityWithExtendedAttributes<TExtendedAttribute>
             where TEntity : IEntity<TEntityId>
     {
